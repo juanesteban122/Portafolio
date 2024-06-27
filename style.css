@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-black: #000000;
+    --color-dark-blue: #20214f;
+    --color-white: #ffffff;
+    --color-pink: #ef72b5;
+    --letra:'Shantell Sans', cursive;
+}
+
+/*base del html*/
+body {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-family: var(--letra);
+    margin: 0;
+    padding: 0;
+
+}
+
+
+/*INCIO DE BARRA DE CONTENIDO */
+.container{
+    max-width: 2400px;
+    margin: 0 auto;
+}
+
+.content{
+    min-height: 40px;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-dark-blue);
+    z-index: 10000; /* Asegura que la barra esté por encima de otros elementos */
+}
+
+
+.logo{
+    font-size: 25px;
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*lista posicion de la lita en la izquierda*/
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+    list-style-type: none;
+
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: var(--color-pink);
+    display: block;
+    font-weight: bold;
+}
+
+/*BOTON DONDE SALE LA BARRA*/
+/*Cambio de color de  la letra cuando se ponga encima el mouse*/
+.menu .navbar ul li a:hover{
+    color: var(--color-white);
+}
+
+/*Ocultar la imagen del menu*/
+#menu {
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label {
+    /*Mostrar el cursor*/
+    cursor: pointer;
+    display: none;
+}
+
+/*FIN DE BARRA DE CONTENIDO */
+
+/*SOBRE MI*/
+
+.sobre-mi {
+    padding: 90px;
+    background-color: var(--color-blackr-dark-blue);
+    color: var(--color-white);
+}
+
+.contenido-sobre-mi {
+    display: flex;
+    align-items: center;
+}
+
+.imagen {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.imagen img {
+    max-width: 100%;
+    height: auto;
+}
+
+.texto {
+    flex: 2;
+    text-align: left;
+}
+
+.titulo {
+    color: var(--color-pink);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#botonDescarga {
+    display: block;
+    margin: 20px auto;
+    background-color: var(--color-pink);
+    color: var(--color-black);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 5px var(--color-pink), 0 0 10px var(--color-pink), 0 0 20px var(--color-pink), 0 0 40px var(--color-pink);
+}
+
+#botonDescarga:hover {
+    color: var(--color-white);
+    background-color: var(--color-dark-blue);
+    box-shadow: 0 0 5px var(--color-dark-blue), 0 0 10px var(--color-dark-blue), 0 0 20px var(--color-dark-blue), 0 0 40px var(--color-dark-blue);
+}
+
+
+
+.letraColor{
+    color: var(--color-pink);
+}
+/*FIN DE SOBRE MI*/
+
+
+
+
+
+
+
+
+header {
+    background-color: var(--color-dark-blue);
+}
+
+
+
+
+
+
+/*titulo del */
+header h1 {
+    color: var(--color-white);
+    margin: 0;
+}
+
+
+section {
+    padding: 90px;
+}
+
+/*Ditancia del footer y posicion de la letra*/
+footer {
+    background-color: var(--color-dark-blue);
+    padding: 10px;
+    text-align: center;
+}
+
+/**/
+a {
+    color: var(--color-pink);
+    text-decoration: none;
+}
+
+/*cuando se pone el mouse encima del footer */
+a:hover {
+    color: var(--color-white);
+}
+
+
+
+/*boton*/
+button {
+    background-color: var(--color-pink);
+    border: none;
+    color: var(--color-black);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/*cambio de color del boton hover*/
+button:hover {
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+}
+
+
+
+/*MEDIA QUERY ADAPTACION DE DISTITAS MEDIDAS*/
+@media (max-width: 991px) {
+    .content{
+        min-height: 70px;
+    }
+    .menu {
+        top:0;
+        padding: 20px;
+    }
+    
+    .menu label{
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--color-black);
+        display: none;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    /*Hacer funcionar el menu*/
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+}
+
