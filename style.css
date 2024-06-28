@@ -151,30 +151,24 @@ body {
 .letraColor{
     color: var(--color-pink);
 }
+
+
+
+ /*IMAGEN*/
+ .imagen-redonda{
+    width: 300px; /* Ajusta el tamaño según tus necesidades */
+    height: 150px; /* Ajusta el tamaño según tus necesidades */
+    border-radius: 30%;
+    object-fit: cover;
+ }
 /*FIN DE SOBRE MI*/
 
 
 
 
-
-
-
-
 header {
-    background-color: var(--color-dark-blue);
+    background-color: chartreuse;
 }
-
-
-
-
-
-
-/*titulo del */
-header h1 {
-    color: var(--color-white);
-    margin: 0;
-}
-
 
 section {
     padding: 90px;
@@ -255,5 +249,36 @@ button:hover {
     #menu:checked ~ .navbar {
         display: initial;
     }
+
+
+/* Estilos responsivos para la sección "Sobre Mí" */
+.sobre-mi {
+    padding: 30px;
+}
+
+.contenido-sobre-mi {
+    flex-direction: column;
+    text-align: center;
+}
+
+.imagen {
+    margin: 0 auto 20px;
+}
+
+.texto {
+    text-align: center;
+}
+
+#botonDescarga {
+    margin: 20px auto;
+}
+
+/*IMAGEN*/
+.imagen-redonda{
+    width: 150px; /* Ajusta el tamaño según tus necesidades */
+    height: 150px; /* Ajusta el tamaño según tus necesidades */
+    border-radius: 30%;
+    object-fit: cover;
+ }
 }
 
