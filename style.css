@@ -166,6 +166,70 @@ body {
 
 
 
+/*DISEÑO DE LA PARTE DE LAS HABILIDADES*/
+
+
+/*posicion de las imagenes*/
+.grid-container{
+    /*Hace que las imagenes se pongan horizontal (hacia los lador)*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    }
+    
+    /*posicion de la imagen*/
+    .grid-item {
+        flex: 1 0 calc(33.33% - 100px); /* Ajusta el tamaño de los elementos para 3 en una fila */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--color-white);
+        border-radius: 50px;
+        transition: transform 0.3s ease-in-out;
+        position: relative; /* Necesario para posicionar el texto */
+        height: 180px; /* Define el alto deseado */
+
+    }
+    
+
+/* Invisible texto */
+.text {
+    display:none; 
+}
+
+    /* Visible texto */
+    .grid-item:hover > .text{
+        /*LETRA*/
+        /*Dise en que posicion va a estar el texto*/
+        margin-bottom: 155px;
+        color: var(--color-dark-blue);
+        /*borde del ciruclo*/    
+        text-align: center;
+        position: absolute;
+        display:block;
+    }
+
+/*permite que se haga un zoom en la imagen*/
+.grid-item:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+
+
+
+/*tamaño de las imagenes*/
+.imagen{
+    height: 200px;
+}
+
+
+
+/* FIN DEL DISEÑO DE LA PARTE DE LAS HABILIDADES*/
+
+
+
 header {
     background-color: chartreuse;
 }

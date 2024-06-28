@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Juan Esteban Guzman Marin</title>
 
+    <!--Se agrega el link que prmite Agregar la imagen-->
+
     <link rel="stylesheet" href="style.css">
     <script defer src="index.js"></script>
 </head>
@@ -20,10 +22,10 @@
                 </label>
                 <nav class="navbar">
                     <ul>
-                        <li><a href="#" id="link-sobre-mi">Sobre mi</a></li>
-                        <li><a href="#" id="link-habilidades">Habilidades</a></li>
-                        <li><a href="#" id="link-proyectos">Proyectos</a></li>
-                        <li><a href="#" id="link-contacto">Contacto</a></li>
+                        <li><a href="#sobre__mi" id="link-sobre-mi">Sobre mi</a></li>
+                        <li><a href="#Habilidades" id="link-habilidades">Habilidades</a></li>
+                        <li><a href="#Proyectos" id="link-proyectos">Proyectos</a></li>
+                        <li><a href="#contacto" id="link-contacto">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
@@ -33,7 +35,7 @@
 
 
 
-    <section class="sobre-mi">
+    <section class="sobre-mi" id="sobre__mi">
         <div class="contenido-sobre-mi">
             <div class="imagen">
                 <img src="img/foto.jpg" alt="Imagen de perfil" class="imagen-redonda">
@@ -46,18 +48,63 @@
         </div>
     </section>
 
-    <h1>hola prueba 1</h1>
 
+    <section class="habilidades" id="Habilidades">
+        <h2 class="titulo">Habilidades</h2>
+        <div class="grid-container">
 
-    <section>
-        <h2>Proyectos</h2>
-        <h1>preuba </h1>
-        <p>Aquí encontrarás una selección de mis trabajos más recientes.</p>
-        <button>Ver Más</button>
+            <div class="grid-item">
+                <img width="144" height="144" src="https://img.icons8.com/color/144/html-5--v1.png" alt="html-5--v1"/>
+                <p class="text">HTML</p>
+            </div>    
+            
+            <div class="grid-item">
+                <img width="144" height="144" src="https://img.icons8.com/color/144/css3.png" alt="css3"/>
+                <p class="text">CSS</p>
+            </div>
+            
+            <div class="grid-item">
+                <img width="144" height="144" src="https://img.icons8.com/color/144/javascript--v1.png" alt="javascript--v1"/>
+                <p class="text">JAVASCRIPT</p>
+            </div>
+
+            <div class="grid-item">
+                <img width="144" height="144" src="https://img.icons8.com/office/80/sql.png" alt="sql"/>
+                <p class="text">SQL </p>
+            </div>
+
+            <div class="grid-item">
+                <img width="144" height="144" src="https://img.icons8.com/parakeet/96/php.png" alt="php"/>
+                <p class="text">PHP </p>
+            </div>
+
+            <div class="grid-item">
+                <img width="144" height="144" src="https://img.icons8.com/color/144/git.png" alt="git"/>                
+                <p class="text">Git hub </p>
+            </div>
+        </div>
     </section>
 
+
+<section class="proyectos" id="Proyectos">
+<h1>goooe</h1>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <p></p>
-    <footer>
+    <footer id="contacto">
         <p>&copy; 2024 Mi Nombre</p>
         <a href="#">LinkedIn</a> | <a href="#">GitHub</a>
     </footer>
