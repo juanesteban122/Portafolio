@@ -1,3 +1,4 @@
+/*DISEÑO BASE DE USO REPETIVO O INICIAL*/
 *{
     margin: 0;
     padding: 0;
@@ -11,7 +12,6 @@
     --color-pink: #ef72b5;
     --letra:'Shantell Sans', cursive;
 }
-
 /*base del html*/
 body {
     background-color: var(--color-black);
@@ -21,6 +21,57 @@ body {
     padding: 0;
 
 }
+
+
+header {
+    background-color: chartreuse;
+}
+
+section {
+    padding: 90px;
+}
+
+/*Ditancia del footer y posicion de la letra*/
+footer {
+    background-color: var(--color-dark-blue);
+    padding: 10px;
+    text-align: center;
+}
+
+/**/
+a {
+    color: var(--color-pink);
+    text-decoration: none;
+}
+
+/*cuando se pone el mouse encima del footer */
+a:hover {
+    color: var(--color-white);
+}
+
+
+
+/*boton*/
+button {
+    background-color: var(--color-pink);
+    border: none;
+    color: var(--color-black);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/*cambio de color del boton hover*/
+button:hover {
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+}
+/*FIN DE DISEÑO BASICO DE USO REPETIVO O BASE*/
 
 
 /*INCIO DE BARRA DE CONTENIDO */
@@ -44,7 +95,6 @@ body {
     background-color: var(--color-dark-blue);
     z-index: 10000; /* Asegura que la barra esté por encima de otros elementos */
 }
-
 
 .logo{
     font-size: 25px;
@@ -89,10 +139,14 @@ body {
     cursor: pointer;
     display: none;
 }
-
 /*FIN DE BARRA DE CONTENIDO */
 
-/*SOBRE MI*/
+
+
+
+
+
+/*INCIO DE CONTENIDO SOBRE MI*/
 
 .sobre-mi {
     padding: 90px;
@@ -146,13 +200,9 @@ body {
     box-shadow: 0 0 5px var(--color-dark-blue), 0 0 10px var(--color-dark-blue), 0 0 20px var(--color-dark-blue), 0 0 40px var(--color-dark-blue);
 }
 
-
-
 .letraColor{
     color: var(--color-pink);
 }
-
-
 
  /*IMAGEN*/
  .imagen-redonda{
@@ -161,14 +211,12 @@ body {
     border-radius: 30%;
     object-fit: cover;
  }
-/*FIN DE SOBRE MI*/
+/*FIN DE CONTENIDO SOBRE MI*/
 
 
 
 
 /*DISEÑO DE LA PARTE DE LAS HABILIDADES*/
-
-
 /*posicion de las imagenes*/
 .grid-container{
     /*Hace que las imagenes se pongan horizontal (hacia los lador)*/
@@ -185,15 +233,14 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: var(--color-white);
+        background-color: rgba(255, 255, 255, 0.6); /* Blanco con opacidad del 90% */
+        
         border-radius: 50px;
         transition: transform 0.3s ease-in-out;
         position: relative; /* Necesario para posicionar el texto */
         height: 180px; /* Define el alto deseado */
-
     }
     
-
 /* Invisible texto */
 .text {
     display:none; 
@@ -217,68 +264,29 @@ body {
     transform: scale(1.04);
 }
 
-
-
 /*tamaño de las imagenes*/
 .imagen{
     height: 200px;
 }
-
-
-
 /* FIN DEL DISEÑO DE LA PARTE DE LAS HABILIDADES*/
 
 
 
-header {
-    background-color: chartreuse;
-}
-
-section {
-    padding: 90px;
-}
-
-/*Ditancia del footer y posicion de la letra*/
-footer {
-    background-color: var(--color-dark-blue);
-    padding: 10px;
-    text-align: center;
-}
-
-/**/
-a {
-    color: var(--color-pink);
-    text-decoration: none;
-}
-
-/*cuando se pone el mouse encima del footer */
-a:hover {
-    color: var(--color-white);
-}
 
 
 
-/*boton*/
-button {
-    background-color: var(--color-pink);
-    border: none;
-    color: var(--color-black);
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
 
-/*cambio de color del boton hover*/
-button:hover {
-    background-color: var(--color-dark-blue);
-    color: var(--color-white);
-}
 
+
+
+
+
+
+
+/*INCIO DEL DISEÑO DE PROYECTOS*/
+
+
+/*FIN DEL DISEÑO DE PROYECTOS*/
 
 
 /*MEDIA QUERY ADAPTACION DE DISTITAS MEDIDAS*/
