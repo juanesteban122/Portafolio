@@ -19,9 +19,7 @@ body {
     font-family: var(--letra);
     margin: 0;
     padding: 0;
-
 }
-
 
 header {
     background-color: chartreuse;
@@ -31,14 +29,13 @@ section {
     padding: 90px;
 }
 
-/*Ditancia del footer y posicion de la letra*/
+/*Distancia del footer y posición de la letra*/
 footer {
     background-color: var(--color-dark-blue);
     padding: 10px;
     text-align: center;
 }
 
-/**/
 a {
     color: var(--color-pink);
     text-decoration: none;
@@ -48,8 +45,6 @@ a {
 a:hover {
     color: var(--color-white);
 }
-
-
 
 /*boton*/
 button {
@@ -72,7 +67,6 @@ button:hover {
     color: var(--color-white);
 }
 /*FIN DE DISEÑO BASICO DE USO REPETIVO O BASE*/
-
 
 /*INCIO DE BARRA DE CONTENIDO */
 .container{
@@ -99,16 +93,14 @@ button:hover {
 .logo{
     font-size: 25px;
     color: var(--color-white);
-    text-transform: uppercase;
     font-weight: bold;
 }
 
-/*lista posicion de la lita en la izquierda*/
+/*lista posición de la lista en la izquierda*/
 .menu .navbar ul li{
     position: relative;
     float: left;
     list-style-type: none;
-
 }
 
 .menu .navbar ul li a{
@@ -141,16 +133,10 @@ button:hover {
 }
 /*FIN DE BARRA DE CONTENIDO */
 
-
-
-
-
-
 /*INCIO DE CONTENIDO SOBRE MI*/
-
 .sobre-mi {
     padding: 90px;
-    background-color: var(--color-blackr-dark-blue);
+    background-color: var(--color-black);
     color: var(--color-white);
 }
 
@@ -204,59 +190,53 @@ button:hover {
     color: var(--color-pink);
 }
 
- /*IMAGEN*/
- .imagen-redonda{
+.imagen-redonda{
     width: 300px; /* Ajusta el tamaño según tus necesidades */
     height: 150px; /* Ajusta el tamaño según tus necesidades */
     border-radius: 30%;
     object-fit: cover;
- }
+}
 /*FIN DE CONTENIDO SOBRE MI*/
-
-
-
 
 /*DISEÑO DE LA PARTE DE LAS HABILIDADES*/
 /*posicion de las imagenes*/
 .grid-container{
-    /*Hace que las imagenes se pongan horizontal (hacia los lador)*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 20px;
     padding: 20px;
-    }
+}
     
-    /*posicion de la imagen*/
-    .grid-item {
-        flex: 1 0 calc(33.33% - 100px); /* Ajusta el tamaño de los elementos para 3 en una fila */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: rgba(255, 255, 255, 0.6); /* Blanco con opacidad del 90% */
-        
-        border-radius: 50px;
-        transition: transform 0.3s ease-in-out;
-        position: relative; /* Necesario para posicionar el texto */
-        height: 180px; /* Define el alto deseado */
-    }
-    
+/*posicion de la imagen*/
+.grid-item {
+    flex: 1 0 calc(33.33% - 100px); /* Ajusta el tamaño de los elementos para 3 en una fila */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.6); /* Blanco con opacidad del 90% */
+    border-radius: 50px;
+    transition: transform 0.3s ease-in-out;
+    position: relative; /* Necesario para posicionar el texto */
+    height: 180px; /* Define el alto deseado */
+}
+
 /* Invisible texto */
 .text {
     display:none; 
 }
 
-    /* Visible texto */
-    .grid-item:hover > .text{
-        /*LETRA*/
-        /*Dise en que posicion va a estar el texto*/
-        margin-bottom: 155px;
-        color: var(--color-dark-blue);
-        /*borde del ciruclo*/    
-        text-align: center;
-        position: absolute;
-        display:block;
-    }
+/* Visible texto */
+.grid-item:hover > .text{
+    /*LETRA*/
+    /*Dise en que posicion va a estar el texto*/
+    margin-bottom: 155px;
+    color: var(--color-dark-blue);
+    /*borde del ciruclo*/    
+    text-align: center;
+    position: absolute;
+    display:block;
+}
 
 /*permite que se haga un zoom en la imagen*/
 .grid-item:hover {
@@ -283,11 +263,64 @@ button:hover {
 
 
 
+
+
+
 /*INCIO DEL DISEÑO DE PROYECTOS*/
+.grid-container-proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
 
+.project-card {
+    flex: 1 0 calc(33.33% - 40px); /* Ajusta el tamaño de los elementos para 3 en una fila */
+    background-color: var(--color-dark-blue);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
 
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-title {
+    font-size: 20px;
+    color: var(--color-pink);
+    text-align: center;
+    margin: 10px 0;
+}
+
+.project-description {
+    font-size: 16px;
+    color: var(--color-white);
+    padding: 0 20px 20px 20px;
+    text-align: center;
+}
+
+.project-link {
+    display: block;
+    background-color: var(--color-pink);
+    color: var(--color-black);
+    text-align: center;
+    padding: 10px 0;
+    margin: 0 20px 20px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.project-link:hover {
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+    border: 1px solid var(--color-pink);
+}
 /*FIN DEL DISEÑO DE PROYECTOS*/
-
 
 /*MEDIA QUERY ADAPTACION DE DISTITAS MEDIDAS*/
 @media (max-width: 991px) {
@@ -317,40 +350,62 @@ button:hover {
     }
 
     /*Hacer funcionar el menu*/
-
     #menu:checked ~ .navbar {
         display: initial;
     }
 
+    /* Estilos responsivos para la sección "Sobre Mí" */
+    .sobre-mi {
+        padding: 30px;
+    }
 
-/* Estilos responsivos para la sección "Sobre Mí" */
-.sobre-mi {
-    padding: 30px;
+    .contenido-sobre-mi {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imagen {
+        margin: 0 auto 20px;
+    }
+
+    .texto {
+        text-align: center;
+    }
+
+    #botonDescarga {
+        margin: 20px auto;
+    }
+
+    .imagen-redonda{
+        width: 150px;
+        height: 150px;
+        border-radius: 30%;
+        object-fit: cover;
+    }
+    /* fin estilo responsivos para la sección "Sobre Mí" */
+
+
+    /*HABILIDADES*/
+    /* Estilos responsivos para la sección "Habilidades" */
+    .grid-item {
+        flex: 1 0 calc(50% - 40px); /* Ajusta el tamaño de los elementos para 2 en una fila en pantallas más pequeñas */
+    }
+
+    /* Estilos responsivos para la sección "Proyectos" */
+    .project-card {
+        flex: 1 0 calc(50% - 20px); /* Ajusta el tamaño de los elementos para 2 en una fila en pantallas más pequeñas */
+    }
 }
 
-.contenido-sobre-mi {
-    flex-direction: column;
-    text-align: center;
-}
+/*ESTILO RESPONSIVO PARA PROYECTOS para que se pueda adaptar */
+@media (max-width: 600px) {
+    /* Estilos responsivos para la sección "Habilidades" */
+    .grid-item {
+        flex: 1 0 100%; /* Ajusta el tamaño de los elementos para 1 en una fila en pantallas más pequeñas */
+    }
 
-.imagen {
-    margin: 0 auto 20px;
+    /* Estilos responsivos para la sección "Proyectos" */
+    .project-card {
+        flex: 1 0 100%; /* Ajusta el tamaño de los elementos para 1 en una fila en pantallas más pequeñas */
+    }
 }
-
-.texto {
-    text-align: center;
-}
-
-#botonDescarga {
-    margin: 20px auto;
-}
-
-/*IMAGEN*/
-.imagen-redonda{
-    width: 150px; /* Ajusta el tamaño según tus necesidades */
-    height: 150px; /* Ajusta el tamaño según tus necesidades */
-    border-radius: 30%;
-    object-fit: cover;
- }
-}
-
