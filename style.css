@@ -10,8 +10,15 @@
     --color-dark-blue: #20214f;
     --color-white: #ffffff;
     --color-pink: #ef72b5;
-    --letra:'Georgia ', cursive;
+    --letra: "Asap", sans-serif;
 }
+
+
+
+
+
+
+
 /*base del html*/
 body {
     background-color: var(--color-black);
