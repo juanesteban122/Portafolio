@@ -1,5 +1,5 @@
-/*DISEÑO BASE DE USO REPETIVO O INICIAL*/
-*{
+/* DISEÑO BASE DE USO REPETITIVO O INICIAL */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,13 +13,7 @@
     --letra: "Asap", sans-serif;
 }
 
-
-
-
-
-
-
-/*base del html*/
+/* Base del HTML */
 body {
     background-color: var(--color-black);
     color: var(--color-white);
@@ -33,10 +27,13 @@ header {
 }
 
 section {
-    padding: 90px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    box-sizing: border-box;
 }
 
-/*Distancia del footer y posición de la letra*/
+/* Distancia del footer y posición de la letra */
 footer {
     background-color: var(--color-dark-blue);
     padding: 10px;
@@ -48,22 +45,17 @@ a {
     text-decoration: none;
 }
 
-/*cuando se pone el mouse encima del footer */
 a:hover {
     color: var(--color-white);
 }
 
-/*boton*/
+/* Botón básico */
 button {
     background-color: var(--color-pink);
     border: none;
     color: var(--color-black);
     padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -75,13 +67,13 @@ button:hover {
 }
 /*FIN DE DISEÑO BASICO DE USO REPETIVO O BASE*/
 
-/*INCIO DE BARRA DE CONTENIDO */
-.container{
+/* INICIO DE BARRA DE CONTENIDO */
+.container {
     max-width: 2400px;
     margin: 0 auto;
 }
 
-.content{
+.content {
     min-height: 40px;
 }
 
@@ -94,23 +86,22 @@ button:hover {
     align-items: center;
     justify-content: space-between;
     background-color: var(--color-dark-blue);
-    z-index: 10000; /* Asegura que la barra esté por encima de otros elementos */
+    z-index: 10000;
 }
 
-.logo{
+.logo {
     font-size: 25px;
     color: var(--color-white);
     font-weight: bold;
 }
 
-/*lista posición de la lista en la izquierda*/
-.menu .navbar ul li{
+.menu .navbar ul li {
     position: relative;
     float: left;
     list-style-type: none;
 }
 
-.menu .navbar ul li a{
+.menu .navbar ul li a {
     font-size: 18px;
     padding: 20px;
     color: var(--color-pink);
@@ -118,9 +109,7 @@ button:hover {
     font-weight: bold;
 }
 
-/*BOTON DONDE SALE LA BARRA*/
-/*Cambio de color de  la letra cuando se ponga encima el mouse*/
-.menu .navbar ul li a:hover{
+.menu .navbar ul li a:hover {
     color: var(--color-white);
 }
 
@@ -129,18 +118,18 @@ button:hover {
     display: none;
 }
 
-.menu-icono{
+.menu-icono {
     width: 25px;
 }
 
 .menu label {
-    /*Mostrar el cursor*/
     cursor: pointer;
     display: none;
 }
-/*FIN DE BARRA DE CONTENIDO */
 
-/*INCIO DE CONTENIDO SOBRE MI*/
+/* FIN DE BARRA DE CONTENIDO */
+
+/* INICIO DE SECCIÓN "SOBRE MÍ" */
 .sobre-mi {
     padding: 90px;
     background-color: var(--color-black);
@@ -193,56 +182,52 @@ button:hover {
     box-shadow: 0 0 5px var(--color-dark-blue), 0 0 10px var(--color-dark-blue), 0 0 20px var(--color-dark-blue), 0 0 40px var(--color-dark-blue);
 }
 
-.letraColor{
+.letraColor {
     color: var(--color-pink);
 }
 
-.imagen-redonda{
-    width: 300px; /* Ajusta el tamaño según tus necesidades */
-    height: 150px; /* Ajusta el tamaño según tus necesidades */
+.imagen-redonda {
+    width: 300px;
+    height: 150px;
     border-radius: 30%;
     object-fit: cover;
 }
-/*FIN DE CONTENIDO SOBRE MI*/
 
-/*DISEÑO DE LA PARTE DE LAS HABILIDADES*/
-/*posicion de las imagenes*/
-.grid-container{
+/* FIN DE SECCIÓN "SOBRE MÍ" */
+
+/* INICIO DE SECCIÓN "HABILIDADES" */
+.grid-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 20px;
     padding: 20px;
 }
-    
-/*posicion de la imagen*/
+
 .grid-item {
-    flex: 1 0 calc(33.33% - 100px); /* Ajusta el tamaño de los elementos para 3 en una fila */
+    flex: 1 0 calc(33.33% - 100px);
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.6); /* Blanco con opacidad del 90% */
+    background-color: rgba(255, 255, 255, 0.6);
     border-radius: 50px;
     transition: transform 0.3s ease-in-out;
-    position: relative; /* Necesario para posicionar el texto */
-    height: 180px; /* Define el alto deseado */
+    position: relative;
+    height: 180px;
 }
 
 /* Invisible texto */
 .text {
-    display:none; 
+    display: none;
 }
 
-/* Visible texto */
-.grid-item:hover > .text{
-    /*LETRA*/
-    /*Dise en que posicion va a estar el texto*/
+.grid-item:hover > .text {
     margin-bottom: 155px;
     color: var(--color-dark-blue);
     /*borde del ciruclo*/    
     text-align: center;
     position: absolute;
-    display:block;
+    display: block;
 }
 
 /*permite que se haga un zoom en la imagen*/
@@ -251,29 +236,12 @@ button:hover {
     transform: scale(1.04);
 }
 
-/*tamaño de las imagenes*/
-.imagen{
+.imagen {
     height: 200px;
 }
 /* FIN DEL DISEÑO DE LA PARTE DE LAS HABILIDADES*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*INCIO DEL DISEÑO DE PROYECTOS*/
+/* INICIO DE SECCIÓN "PROYECTOS" */
 .grid-container-proyectos {
     display: flex;
     flex-wrap: wrap;
@@ -283,7 +251,7 @@ button:hover {
 }
 
 .project-card {
-    flex: 1 0 calc(33.33% - 40px); /* Ajusta el tamaño de los elementos para 3 en una fila */
+    flex: 1 0 calc(33.33% - 40px);
     background-color: var(--color-dark-blue);
     border-radius: 20px;
     overflow: hidden;
@@ -327,23 +295,25 @@ button:hover {
     color: var(--color-white);
     border: 1px solid var(--color-pink);
 }
-/*FIN DEL DISEÑO DE PROYECTOS*/
 
-/*MEDIA QUERY ADAPTACION DE DISTITAS MEDIDAS*/
+/* FIN DE SECCIÓN "PROYECTOS" */
+
+/* MEDIA QUERIES */
 @media (max-width: 991px) {
-    .content{
+    .content {
         min-height: 70px;
     }
+
     .menu {
-        top:0;
+        top: 0;
         padding: 20px;
     }
-    
-    .menu label{
+
+    .menu label {
         display: initial;
     }
 
-    .menu .navbar{
+    .menu .navbar {
         position: absolute;
         top: 100%;
         left: 0;
@@ -352,7 +322,7 @@ button:hover {
         display: none;
     }
 
-    .menu .navbar ul li{
+    .menu .navbar ul li {
         width: 100%;
     }
 
@@ -383,24 +353,20 @@ button:hover {
         margin: 20px auto;
     }
 
-    .imagen-redonda{
+    .imagen-redonda {
         width: 150px;
         height: 150px;
-        border-radius: 30%;
-        object-fit: cover;
     }
     /* fin estilo responsivos para la sección "Sobre Mí" */
 
-
-    /*HABILIDADES*/
     /* Estilos responsivos para la sección "Habilidades" */
     .grid-item {
-        flex: 1 0 calc(50% - 40px); /* Ajusta el tamaño de los elementos para 2 en una fila en pantallas más pequeñas */
+        flex: 1 0 calc(50% - 40px);
     }
 
     /* Estilos responsivos para la sección "Proyectos" */
     .project-card {
-        flex: 1 0 calc(50% - 20px); /* Ajusta el tamaño de los elementos para 2 en una fila en pantallas más pequeñas */
+        flex: 1 0 calc(50% - 20px);
     }
 }
 
@@ -408,11 +374,20 @@ button:hover {
 @media (max-width: 600px) {
     /* Estilos responsivos para la sección "Habilidades" */
     .grid-item {
-        flex: 1 0 100%; /* Ajusta el tamaño de los elementos para 1 en una fila en pantallas más pequeñas */
+        flex: 1 0 100%;
     }
 
     /* Estilos responsivos para la sección "Proyectos" */
     .project-card {
-        flex: 1 0 100%; /* Ajusta el tamaño de los elementos para 1 en una fila en pantallas más pequeñas */
+        flex: 1 0 100%;
     }
 }
+
+@media (max-width: 768px) {
+    .habilidades,
+    .proyectos {
+        padding: 20px;
+    }
+}
+
+/* FIN DE MEDIA QUERIES */
