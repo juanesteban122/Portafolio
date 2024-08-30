@@ -401,8 +401,8 @@ button:hover {
     text-align: center;
 }
 
-.imgG {
-    width: px;  /* Ajusta el tamaño a tu gusto */
-    height: 48px; /* Asegúrate de que mantenga la proporción */
+.imgG{
+    width: 50px;  /* Ajusta el tamaño a tu gusto */
+    height: 50px; /* Asegúrate de que mantenga la proporción */
 }
 
